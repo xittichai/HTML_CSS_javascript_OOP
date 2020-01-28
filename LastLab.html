@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <title>Last Lab</title>
+    <style>
+        /*flex*/
+        .flex-container {display: flex; background-color: lightblue;}
+        .flex-container > div {background-color: gray; margin: auto; padding: auto}
+
+        /*Vertical flex*/
+        .flex-vertical {display: flex; background-color: lightblue; flex-direction: column;}
+        .flex-vertical > div {background-color: gray; margin: auto; padding: auto}
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 100px;
+            grid-row-gap: 50px;
+            background-color: lightblue;
+        }
+        .grid-container > div {background-color: gray;}
+    </style>
+</head>
+<body>
+    <!-- เนื้อหา -->
+    <div>
+        <h1><a href="https://www.kaidee.com/">Kaidee</a></h1>
+        <section>
+            <h2>Content</h2>
+            <ol>
+                <li><a href="#Analysis">วิเคราะห์</a></li>
+                <li><a href="#Picture">ภาพประกอบ</a></li>
+                <li><a href="#Structure">โครงสร้าง</a></li>
+            </ol>
+        </section>
+        <section>
+            <h2 id=Analysis>วิเคราะห์</h2>
+            <h3>Page แบ่งเป็น 3 ส่วน (ดูรูปข้างล่างประกอบ):</h3>
+            <ol>
+                <li>header ซึ่งภายในแบ่งเป็น 2 section ในแต่ละ section ใช้ flex ในการแบ่งลิงค์หรือ pulldown หรือปุ่ม หรืออื่นๆ</li>
+                <li>ส่วนตรงกลางที่แบ่งเป็น section หลายๆ section บาง section มี grid บาง section มี iframe ครอบ flex</li>
+                <li>footer ที่แบ่งภายในด้วย div บาง div มี flex</li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- ภาพประกอบ -->
+    <h2 id="Picture">ภาพประกอบ</h2>
+    <div>
+        <img src="Kaidee.jpg" style="width: 90vw; height: auto;">
+    </div>
+
+    <!-- โครงสร้าง -->
+    <h2 id="Structure">โครงสร้าง</h2>
+    <div>
+        <!-- header -->
+        <header>
+            <section>
+                header
+                <div class="flex-container">
+                    <div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+                    <div></div>
+                    <div>XXX</div><div>XXX</div>
+                </div>
+            </section>
+            <section>
+                <div class="flex-container">
+                    <div><strong>Kaidee</strong></div><div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+                </div>
+            </section>
+        </header>
+        section grid
+        <!-- เนื้อหาตรงกลาง -->
+        <!-- รวมปุ่ม -->
+        <section>
+            <div class="grid-container">
+                <div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+                <div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+                <div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+            </div>
+        </section>
+        Banner ต่างๆ
+        <section style="background-color: gray;">
+            Banner
+            <br/><br/><br/><br/>
+        </section>
+        <!-- ประกาศมาใหม่ -->
+        <h2>ประกาศมาใหม่ xxxxxxxxx</h2>
+        <section>
+            <div class="flex-container">
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+            </div>
+        </section>
+        <h2>ประกาศมาใหม่ xxxxxxxxx</h2>
+        <section>
+            <div class="flex-container">
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+            </div>
+        </section>
+        <!-- ข่าวสารน่าสนใจ -->
+        <h2>ข่าวสารน่าสนใจ</h2>
+        <section>
+            <iframe src="https://www.kaidee.com/" width="550">
+            </iframe>
+        </section>
+        <!-- Banner -->
+        <section>
+            <div style="background-color: gray">Banner<br/><br/><br/></div>
+        </section>
+        <!-- ผู้ขายแนะนำ -->
+        <h2>ผู้ขายแนะนำ</h2>
+        <section>
+            <div class="flex-container">
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+            </div>
+            <br/>
+            <div class="flex-container">
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+                <div class="flex-vertical"><div>Pic</div><div>XXXXX</div></div>
+            </div>
+        </section>
+        <!-- XXXXX -->
+        <section>
+            <h4>XXXXXX</h4>
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        </section>
+        <footer>
+            <div class="flex-container">
+                <div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div><div>XXX</div>
+                <div></div>
+                <div>XXX</div><div>XXX</div>
+            </div>
+            <div>XXXXXXX</div>
+            <div>Logo</div>
+            <div>Logo</div>
+        </footer>
+    </div>
+</body>

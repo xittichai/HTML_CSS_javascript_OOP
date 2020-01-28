@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <title>Lab</title>
+    <style>
+        table {border-collapse: collapse;}
+        table, th, td {border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <div>
+        <h1 id="Title">Lab HTML and CSS</h1>
+    </div>
+    <!-- Index -->
+    <div>
+        <h2>Index</h2>
+        <ol>
+            <li><a href="#Attribute">Attribute</a></li>
+            <li><a href="#Differentiation">Differentiation</a></li>
+            <li><a href="#InputType">Input Type</a></li>
+            <li><a href="#Additional">Additional</a></li>
+        </ol>
+    </div>
+    <!-- Content -->
+    <div>
+        <!-- Attributes -->
+        <div>
+            <h2 id="Attribute">Attribute</h2>
+            <table>
+                <tr><th>Attribute</th><th>Description</th><th>&lt;h&gt;</th><th>&lt;p&gt;</th><th>&lt;div&gt;</th><th>&lt;img&gt;</th><th>&lt;a&gt;</th><th>&lt;ul&gt;</th><th>&lt;ol&gt;</th><th>&lt;table&gt;</th><th>&lt;form&gt;</th><th>&lt;button&gt;</th><tr>
+                <tr><td>accept-charset</td><td>Specifies the character encodings that are to be used for the form submission</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>accesskey</td><td>Specifies a shortcut key to activate/focus an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>action</td><td>Specifies where to send the form-data when a form is submitted</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>alt</td><td>Specifies an alternate text when the original element fails to display</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>autocomplete</td><td>Specifies whether the &lt;form&gt; or the &lt;input&gt; element should have autocomplete enabled</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>autofocus</td><td>Specifies that the element should automatically get focus when the page loads</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>class</td><td>Specifies one or more classnames for an element (refers to a class in a style sheet)</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>contenteditable</td><td>Specifies whether the content of an element is editable or not</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>data-*</td><td>Used to store custom data private to the page or application</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>dir</td><td>Specifies the text direction for the content in an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>disabled</td><td>Specifies that the specified element/group of elements should be disabled</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>download</td><td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>draggable</td><td>Specifies whether an element is draggable or not</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>dropzone</td><td>Specifies whether the dragged data is copied, moved, or linked, when dropped</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>enctype</td><td>Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>form</td><td>Specifies the name of the form the element belongs to</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>formaction</td><td>Specifies where to send the form-data when a form is submitted. Only for type="submit"</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>height</td><td>Specifies the height of the element</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>hidden</td><td>Specifies that an element is not yet, or is no longer, relevant</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>href</td><td>Specifies the URL of the page the link goes to</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>hreflang</td><td>Specifies the language of the linked document</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>id</td><td>Specifies a unique id for an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ismap</td><td>Specifies an image as a server-side image-map</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>lang</td><td>Specifies the language of the element's content</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>media</td><td>Specifies what media/device the linked document is optimized for</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>method</td><td>Specifies the HTTP method to use when sending form-data</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>name</td><td>Specifies the name of the element</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>novalidate</td><td>Specifies that the form should not be validated when submitted</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>onabort</td><td>Script to be run on abort</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>onblur</td><td>Script to be run when the element loses focus</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onchange</td><td>Script to be run when the value of the element is changed</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onclick</td><td>Script to be run when the element is being clicked</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>oncontextmenu</td><td>Script to be run when a context menu is triggered</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>oncopy</td><td>Script to be run when the content of the element is being copied</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>oncut</td><td>Script to be run when the content of the element is being cut</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondblclick</td><td>Script to be run when the element is being double-clicked</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondrag</td><td>Script to be run when the element is being dragged</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondragend</td><td>Script to be run at the end of a drag operation</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondragenter</td><td>Script to be run when an element has been dragged to a valid drop target</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondragleave</td><td>Script to be run when an element leaves a valid drop target</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondragover</td><td>Script to be run when an element is being dragged over a valid drop target</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondragstart</td><td>Script to be run at the start of a drag operation</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>ondrop</td><td>Script to be run when dragged element is being dropped</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onerror</td><td>Script to be run when an error occurs</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>onfocus</td><td>Script to be run when the element gets focus</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>oninput</td><td>Script to be run when the element gets user input</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>oninvalid</td><td>Script to be run when the element is invalid</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onkeydown</td><td>Script to be run when a user is pressing a key</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onkeypress</td><td>Script to be run when a user presses a key</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onkeyup</td><td>Script to be run when a user releases a key</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onload</td><td>Script to be run when the element is finished loading</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>onmousedown</td><td>Script to be run when a mouse button is pressed down on an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onmousemove</td><td>Script to be run as long as the  mouse pointer is moving over an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onmouseout</td><td>Script to be run when a mouse pointer moves out of an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onmouseover</td><td>Script to be run when a mouse pointer moves over an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onmouseup</td><td>Script to be run when a mouse button is released over an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onmousewheel</td><td>Script to be run when a mouse wheel is being scrolled over an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onpaste</td><td>Script to be run when the user pastes some content in an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onreset</td><td>Script to be run when a reset button in a form is clicked.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>onscroll</td><td>Script to be run when an element's scrollbar is being scrolled</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onselect</td><td>Script to be run when the element gets selected</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>onsubmit</td><td>Script to be run when a form is submitted</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>onwheel</td><td>Script to be run when the mouse wheel rolls up or down over an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>rel</td><td>Specifies the relationship between the current document and the linked document</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>reversed</td><td>Specifies that the list order should be descending (9,8,7...)</td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><tr>
+                <tr><td>sizes</td><td>Specifies the size of the linked resource</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>spellcheck</td><td>Specifies whether the element is to have its spelling and grammar checked or not</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>src</td><td>Specifies the URL of the media file</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>srcset</td><td>Specifies the URL of the image to use in different situations</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>start</td><td>Specifies the start value of an ordered list</td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><tr>
+                <tr><td>style</td><td>Specifies an inline CSS style for an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>tabindex</td><td>Specifies the tabbing order of an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>target</td><td>Specifies the target for where to open the linked document or where to submit the form</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td align="center">x</td><td></td><tr>
+                <tr><td>title</td><td>Specifies extra information about an element</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>translate</td><td>Specifies whether the content of an element should be translated or not</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><td align="center">x</td><tr>
+                <tr><td>type</td><td>Specifies the type of element</td><td></td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>usemap</td><td>Specifies an image as a client-side image-map</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+                <tr><td>value</td><td>Specifies the value of the element</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center">x</td><tr>
+                <tr><td>width</td><td>Specifies the width of the element</td><td></td><td></td><td></td><td align="center">x</td><td></td><td></td><td></td><td></td><td></td><td></td><tr>
+            </table>
+            <a href="#Title">back</a>
+        </div>
+        <div>
+            <h2 id="Differentiation">Differentiation</h2>
+            <table>
+                <tr><th>Tags</th><th>Differentialtion</th></tr>
+                <tr><td>&lt;hr&gt; & &lt;br&gt;</td><td>ขึ้นบรรทัดใหม่แต่ hr มีเส้นขั้น br ไม่มี</td></tr>
+                <tr><td>&lt;ul&gt; & &lt;ol&gt;</td><td>List เหมือนกันแต่ ul ไม่มีเลข ol มีเลข</td></tr>
+                <tr><td>&lt;select&gt; & &lt;checkbox&gt; & &lt;radio button&gt;</td><td>select เป็น drop down checkbox ไว้ติ๊กเลือกได้หลายอัน ส่วน radio ใช้ร่วมกับ form ทำให้เลือกได้ทีละอันเดียว </td></tr>
+                <tr><td>&lt;div&gt; & &lt;span&gt;</td><td>แบ่งกลุ่มแต่ div ขึ้นบรรทัดใหม่ span ไม่ขึ้นบรรทัดใหม่</td></tr>
+                <tr><td>&lt;script&gt; & &lt;style&gt;</td><td>script ใช้กับ javascript style ใช้กับ CSS</td></tr>
+            </table>
+            <a href="#Title">back</a>
+        </div>
+        <div>
+            <h2 id="InputType">Input Type</h2>
+            <table>
+                <tr><th>type</th><th>description</th><th>Example</th><tr>
+                <tr><td>button</td><td>A push button with no default behavior displaying the value of the value attribute, empty by default.</td><td><input type="button"></td><tr>
+                <tr><td>checkbox</td><td>A check box allowing single values to be selected/deselected.</td><td><input type="checkbox"></td><tr>
+                <tr><td>color</td><td>A control for specifying a color; opening a color picker when active in supporting browsers.</td><td><input type="color"></td><tr>
+                <tr><td>date</td><td>A control for entering a date (year, month, and day, with no time) opening a date picker or numeric wheels for month, hour, etc., when active in supporting browsers..</td><td><input type="date"></td><tr>
+                <tr><td>datetime-local</td><td>A control for entering a date and time, with no time zone; opening a date picker or numeric wheels for month, day, and year, when active in supporting browsers.</td><td><input type="datetime-local"></td><tr>
+                <tr><td>email</td><td>A field for editing an e-mail address. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.</td><td><input type="email"></td><tr>
+                <tr><td>file</td><td>A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select.</td><td><input type="file"></td><tr>
+                <tr><td>hidden</td><td>A control that is not displayed but whose value is submitted to the server. There is an example in the next column, but it's hidden!</td><td><input type="hidden"></td><tr>
+                <tr><td>image</td><td>A graphical submit button -- displaying an image defined with the src attribute. The alt attribute displays if the image src is missing.</td><td><input type="image"></td><tr>
+                <tr><td>month</td><td>A control for entering a month and year, with no time zone.</td><td><input type="month"></td><tr>
+                <tr><td>number</td><td>A control for entering a number; displays a spinner and adds default validation when supported. Displays a numeric keypad in some devices with dynamic keypads.</td><td><input type="number"></td><tr>
+                <tr><td>password</td><td>A single-line text field whose value is obscured. Will alert user if site is not secure</td><td><input type="password"></td><tr>
+                <tr><td>radio</td><td>A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td><td><input type="radio"></td><tr>
+                <tr><td>range</td><td>A control for entering a number whose exact value is not important; displays as a range widget defaulting to the middle value. Used in conjunction min and max to define the range of acceptable values.</td><td><input type="range"></td><tr>
+                <tr><td>reset</td><td>A button that resets the contents of the form to default values. Not recommended.</td><td><input type="reset"></td><tr>
+                <tr><td>search</td><td>A single-line text field for entering search strings. Line-breaks are automatically removed from the input value. May include a delete icon in supporting browsers that can be used to clear the field. Displays a search icon instead of enter key on some devices with dynamic keypads.</td><td><input type="search"></td><tr>
+                <tr><td>submit</td><td>A button that submits the form.</td><td><input type="submit"></td><tr>
+                <tr><td>tel</td><td>A control for entering a telephone number. Displays a telephone keypad in some devices with dynamic keypads.</td><td><input type="tel"></td><tr>
+                <tr><td>text</td><td>The default value. A single-line text field. Line-breaks are automatically removed from the input value.</td><td><input type="text"></td><tr>
+                <tr><td>time</td><td>A control for entering a time value with no time zone.</td><td><input type="time"></td><tr>
+                <tr><td>url</td><td>A field for entering a URL. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.</td><td><input type="url"></td><tr>
+                <tr><td>week</td><td>A control for entering a date consisting of a week-year number and a week number with no time zone.</td><td><input type="week"></td><tr>
+            </table>
+            <a href="#Title">back</a>
+        </div>
+        <div>
+            <h2 id="Additional">Additional</h2>
+            <table>
+                <tr><th>Tag</th><th>Example</th><th>Desciption</th></tr>
+                <tr><td>&lt;strong&gt;&lt;/strong&gt;</td><td><strong>strong</strong></td><td>ตัวหนา</td></tr>
+                <tr><td>&lt;label&gt;&lt;/label&gt;</td><td><label>label</label></td><td>Label เห็นชัดเวลาใช้กับ Form</td></tr>
+                <tr><td>&lt;del&gt;&lt;/del&gt;</td><td><del>del</del></td><td>ขีดฆ่า</td></tr>
+                <tr><td>&lt;b&gt;&lt;/b&gt;</td><td><b>b</b></td><td>ตัวหนา</td></tr>
+                <tr><td>&lt;em&gt;&lt;/em&gt;</td><td><em>em</em></td><td>ตัวเอียง</td></tr>
+                <tr><td>&lt;mark&gt;&lt;/mark&gt;</td><td><mark>mark</mark></td><td>ไฮไลท์</td></tr>
+                <tr><td>&lt;i&gt;&lt;/i&gt;</td><td><i>i</i></td><td>ตัวเอียง</td></tr>
+                <tr><td>&lt;sub&gt;&lt;/sub&gt;</td><td><sub>sub</sub></td><td>ตัวห้อย</td></tr>
+                <tr><td>&lt;sup&gt;&lt;/sup&gt;</td><td><sup>sup</sup></td><td>ตัวยก</td></tr>
+            </table>
+            <a href="#Title">back</a>
+        </div>
+    </div>
+</body>
