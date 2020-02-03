@@ -4,105 +4,113 @@
         <title>Lab CSS</title>
 
         <style>
-            /* Tooltip */
-            .tooltip {
-                position: relative;
-                display: inline-block;
-                border-bottom: 1px dotted black;
+        /* Tooltip */
+            .tooltip { /* สำหรับ Class tooltip (ทำเส้นประใต้ Content ใน element)*/
+                position: relative; /* กำหนดการอ้างอิงตำแหน่งแบบ relative */
+                display: inline-block; /* กำหนดรูปแบบการแสดงผลเป็นแบบ inline-block เพื่อที่จะแสดงเป็นบรรทัดเดียว และสามารถกำหนดความสูง */
+                border-bottom: 1px dotted black; /* ทำเส้นประใต้ตัวอักษร */
             }
-            .tooltip .tooltiptext {
-                visibility: hidden;
-                width: 120px;
-                background-color: #555;
-                color: #fff;
-                text-align: center;
-                border-radius: 6px;
-                padding: 5px 0;
-                position: absolute;
-                z-index: 1;
-                bottom: 125%;
-                left: 50%;
-                margin-left: -60px;
-                opacity: 0;
-                transition: opacity 0.3s;
+            .tooltip .tooltiptext { /* สำหรับ Class tooltiptext ที่อยู่ใน Class tooltip (Descendant Combinator)*/
+
+                /* กำหนดให้ซ่อน tooltiptext ไว้ก่อน */
+                visibility: hidden; /* กำหนดให้ซ่อน tooltiptext ไว้ก่อน */
+
+                /* กำหนดรูปแบบของ tooltiptext */
+                width: 120px; /* กำหนดความกว้าง */
+                background-color:#555; /* กำหนดสีพื้น */
+                color: #fff; /* กำหนดสีตัวอักษร */
+                text-align: center; /* กำหนดให้ข้อความอยู่ตรงกลาง */
+                border-radius: 6px; /* กำหนดมุมกรอบให้มน */
+                padding: 5px 0; /* กำหนดระยะขอบ */
+                position: absolute; /* กำหนดการอ้างอิงตำแหน่งแบบ absolute */
+                z-index: 1; /* กำหนดให้ tooltiptext อยู่ด้านหน้า */
+                bottom: 125%; /* กำหนดตำแหน่งให้สูงขึ้นอยู่เหนือบรรทัด */
+                left: 50%; /* กำหนดตำแหน่งให้อยู่กึ่งกลาง tooltip */
+                margin-left: -60px; /* กำหนด Margin ซ้ายไปทางซ้ายอีก 60px */
+
+                /* เล่นกับ opacity เวลาเซ็ต 100% จะได้ค่อยๆ Fade in เข้ามา */
+                opacity: 0; /* กำหนดให้ tooltiptext ใส (ทึบ 0%) ไว้ก่อนเพื่อจะใช้ transition ตอนปรับ opacity เป็น 100% */
+                transition: opacity 0.3s; /* เวลาที่ใช้ในการค่อยๆแสดง tooltiptext ขึ้นมา */
             }
-            .tooltip .tooltiptext::after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                margin-left: -5px;
-                border-width: 5px;
-                border-style: solid;
-                border-color: #555 transparent transparent transparent;
+            /* เติมขีดแหลมใต้ tooltiptext */
+            .tooltip .tooltiptext::after { /* สำหรับ Element ที่อยู่หลัง Class tooltiptext ที่อยู่ใน Class tooltip (Pseudo Element) */
+                content: ""; /* กำหนดข้อความที่จะแสดงใน tooltiptext::after กรณีนี้คือไม่มีการแสดงตัวอักษรอะไร */
+                position: absolute; /* กำหนดการอ้างอิงตำแหน่งแบบ absolute */
+                top: 100%; /* กำหนดตำแหน่งขอบบนต่ำลงมาเท่ากับ 100% ของความสูง */
+                left: 50%; /* กำหนดตำแหน่งขอบซ้ายไปทางขวาเท่ากับ 50% ของความกว้าง */
+                margin-left: -5px; /* กำหนด margin ซ้าย (ถอยไปทางซ้าย 5px) */
+                border-width: 5px; /* กำหนดความหนาเส้นขอบ */
+                border-style: solid; /* กำหนดเส้นขอบเป็นเส้นทึบ */
+                border-color: #555 transparent transparent transparent; /* กำหนดเส้นขอบบนสีเทา ด้านอื่นๆไม่แสดง */
             }
-            .tooltip:hover .tooltiptext {
-                visibility: visible;
-                opacity: 1;
+            /* แสดง tooltiptext ขึ้นมาต้องเมาส์ชี้ */
+            .tooltip:hover .tooltiptext { /* สำหรับ Class tooltiptext ที่อยู่ใน Class tooltip ตอนเมาส์ชี้ (Pseudo Class)*/
+                visibility: visible; /* กำหนดให้แสดง tooltiptext เมื่อเมาส์ชี้ที่ tooltip */
+                opacity: 1; /* กำหนดให้ tooltiptext ทึบ 100% */
             }
 
-            /* Pagination */
+        /* Pagination */
             .pagination {
-                display: inline-block;
+                display: inline-block; /* กำหนดรูปแบบการแสดงผลเป็นแบบ inline-block เพื่อที่จะแสดงเป็นบรรทัดเดียว และสามารถกำหนดความสูง */
             }
 
-            /* Navigation Bar */
+        /* Navigation Bar */
             ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
+                list-style-type: none; /* กำหนดให้ไม่แสดงเครื่องหมายหน้า list */
+                margin: 0; /* กำหนด Margin 0 */
+                padding: 0; /* กำหนด Padding 0 */
+                overflow: hidden; /* กำหนดไม่ให้แสดง scroll bar เวลาตัวอักษรล้น */
+                background-color: #333; /* กำหนดสีพื้น */
             }
             li {
-                float: left;
+                float: left; /* กำหนดให้แสดง list เริ่มจากซ้ายต่อออกทางด้านข้าง */
             }
             li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
+                display: block; /* กำหนดการแสดงผลเป็น block คือขึ้นบรรทัดใหม่ */
+                color: white; /* กำหนดสีตัวอักษร */
+                text-align: center; /* กำหนดให้ข้อความอยู่ตรงกลาง */
+                padding: 14px 16px; /* กำหนด padding บนล่าง 14px ซ้ายขวา 16px */
+                text-decoration: none; /* กำหนดไม่ให้แสดงเส้นใต้ที่ลิงค์ */
             }
             li a:hover {
-                background-color: #111;
+                background-color: #111; /* เปลี่ยนสีเวลาที่เมาส์ชี้ */
             }
 
-            /* Dropdown */
+        /* Dropdown */
             .dropbtn {
-                background-color: #4CAF50;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
+                background-color: #4CAF50; /* กำหนดสีพื้น */
+                color: white; /* กำหนดสีตัวอักษร */
+                padding: 16px; /* กำหนด padding */
+                font-size: 16px; /* กำหนดขนาดตัวอักษร */
+                border: none; /* กำหนดให้ไม่แสดงเส้นขอบ */
+                cursor: pointer; /* เปลี่ยน pointer เป็นรูปมือ */
             }
 
             .dropdown {
-                position: relative;
-                display: inline-block;
+                position: relative; /* กำหนดการอ้างอิงตำแหน่งแบบ relative */
+                display: inline-block; /* กำหนดให้หัวข้อแสดงผลอยู่บนบรรทัดเดียวกัน กรณีที่มีหัวข้อหลายๆหัวข้อ */
             }
 
             .dropdown-content {
-                display: none;
-                position: absolute;
-                right: 0;
-                background-color: #f9f9f9;
-                min-width: 160px;
+                display: none; /* กำหนดไม่ให้แสดง */
+                position: absolute; /* กำหนดการอ้างอิงตำแหน่งแบบ absolute */
+                right: 0; /* กำหนดการแสดงผลชิดขวา */
+                background-color: #f9f9f9; /* กำหนดสีพื้น */
+                min-width: 160px; /* กำหนดความกว้างขั้นต่ำของ span หรือ inline หรือ inline-block */
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
+                z-index: 1; /* กำหนดให้ dropdown-content อยู่ด้านหน้า */
             }
 
             .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
+                color: black; /* กำหนดสีตัวอักษร */
+                padding: 12px 16px; /* กำหนด padding บนล่าง 12px ซ้ายขวา 16px */
+                text-decoration: none; /* กำหนดไม่ให้แสดงเส้นใต้ที่ลิงค์ */
+                display: block; /* กำหนดการแสดงผล element เป็น block (ขึ้นบรรทัดใหม่) */
             }
 
-            .dropdown-content a:hover {background-color: #f1f1f1;}
-            .dropdown:hover .dropdown-content {display: block;}
-            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+            .dropdown-content a:hover {background-color: #f1f1f1;} /* เปลี่ยนสีปุ่มใน dropdown-content เวลาที่เมาส์ชี้ */
+            .dropdown:hover .dropdown-content {display: block;} /* กำหนดให้ dropdown-content แสดงผลเป็น block ตือขึ้นบรรทัดใหม่ลงมาเรื่อยๆ */
+            .dropdown:hover .dropbtn {background-color: #3e8e41;} /* เปลี่ยนสีปุ่มเวลาที่เมาส์ชี้ */
         </style>
     </head>
 
@@ -156,7 +164,7 @@
             <h4>เมนูที่แสดงรายการออกมาเมื่อคลิ้กหรือเมาส์ชี้</h4>
             <div class="dropdown" style="float:left;">
                 <button class="dropbtn">Left</button>
-                <div class="dropdown-content" style="left:0;">
+                <div class="dropdown-content" style="left:0;"> <!-- กำหนดตำแหน่งขอบซ้ายชิดซ้าย -->
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
